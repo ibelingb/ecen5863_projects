@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Sep 30 20:55:12 2020
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : hello_world_lab_top
+Top-level Entity Name : hello_world
+Family : MAX 10
+Total logic elements : 1,674
+    Total combinational functions : 1,505
+    Dedicated logic registers : 885
+Total registers : 885
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 142,336
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
