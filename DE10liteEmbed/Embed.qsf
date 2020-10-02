@@ -433,6 +433,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name QIP_FILE Embed/synthesis/Embed.qip
 set_global_assignment -name SOURCE_FILE v/spi_param.h
 set_global_assignment -name VERILOG_FILE v/spi_ee_config.v
 set_global_assignment -name VERILOG_FILE v/spi_controller.v
