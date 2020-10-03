@@ -64,14 +64,14 @@ sysid:                               ./libraries/sysid/
 spi_0:                               ./libraries/spi_0/                              
 slide_pio:                           ./libraries/slide_pio/                          
 sdram:                               ./libraries/sdram/                              
-onchip_memory2_0:                    ./libraries/onchip_memory2_0/                   
+onchip_ram:                          ./libraries/onchip_ram/                         
 onchip_flash_0:                      ./libraries/onchip_flash_0/                     
 nios2_gen2_0:                        ./libraries/nios2_gen2_0/                       
 modular_adc_0:                       ./libraries/modular_adc_0/                      
 mm_clock_crossing_bridge_0:          ./libraries/mm_clock_crossing_bridge_0/         
 master_0:                            ./libraries/master_0/                           
 led_pio:                             ./libraries/led_pio/                            
-jtag_uart_0:                         ./libraries/jtag_uart_0/                        
+jtag_uart:                           ./libraries/jtag_uart/                          
 altpll_1:                            ./libraries/altpll_1/                           
 altpll_0:                            ./libraries/altpll_0/                           
 altera_ver:                          ./libraries/altera_ver/                         

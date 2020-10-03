@@ -1,0 +1,551 @@
+Info: Starting: Create simulation model
+Info: qsys-generate E:\repos\ECEN5863_projects\DE10liteEmbed\Embed.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=E:\repos\ECEN5863_projects\DE10liteEmbed\Embed\simulation --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10liteEmbed/Embed.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 16.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding altpll_1 [altpll 16.1]
+Progress: Parameterizing module altpll_1
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 16.1]
+Progress: Parameterizing module clk_1
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding led_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module led_pio
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 16.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_flash_0 [altera_onchip_flash 16.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram
+Progress: Adding slide_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module slide_pio
+Progress: Adding spi_0 [altera_avalon_spi 16.1]
+Progress: Parameterizing module spi_0
+Progress: Adding sysid [altera_avalon_sysid_qsys 16.1]
+Progress: Parameterizing module sysid
+Progress: Adding timer_0 [altera_avalon_timer 16.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Embed.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Embed.modular_adc_0.control_internal.response/st_splitter_internal.in: The sink has a empty signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out0/sample_store_internal.response: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out1/adc_monitor_internal.adc_data: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: Embed.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: Embed.sysid: Time stamp will be automatically updated when this component is generated.
+Info: Embed: Generating Embed "Embed" for SIM_VERILOG
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+Info: Inserting clock-crossing logic between cmd_demux_002.src4 and cmd_mux_009.sink0
+Info: Inserting clock-crossing logic between cmd_demux_002.src5 and cmd_mux_010.sink0
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+Info: Inserting clock-crossing logic between rsp_demux_009.src0 and rsp_mux_002.sink4
+Info: Inserting clock-crossing logic between rsp_demux_010.src0 and rsp_mux_002.sink5
+Info: altpll_0: Generating Verilog simulation model
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: altpll_0: Generated simulation model Embed_altpll_0.vo
+Info: altpll_0: "Embed" instantiated altpll "altpll_0"
+Info: altpll_1: Generating Verilog simulation model
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: altpll_1: Generated simulation model Embed_altpll_1.vo
+Info: altpll_1: "Embed" instantiated altpll "altpll_1"
+Info: jtag_uart_0: Starting RTL generation for module 'Embed_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Embed_jtag_uart_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0009_jtag_uart_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0009_jtag_uart_0_gen//Embed_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0009_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'Embed_jtag_uart_0'
+Info: jtag_uart_0: "Embed" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: led_pio: Starting RTL generation for module 'Embed_led_pio'
+Info: led_pio:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Embed_led_pio --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0010_led_pio_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0010_led_pio_gen//Embed_led_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0010_led_pio_gen/  ]
+Info: led_pio: Done RTL generation for module 'Embed_led_pio'
+Info: led_pio: "Embed" instantiated altera_avalon_pio "led_pio"
+Info: master_0: "Embed" instantiated altera_jtag_avalon_master "master_0"
+Info: mm_clock_crossing_bridge_0: "Embed" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_001: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_002: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_1
+Info: modular_adc_0: "Embed" instantiated altera_modular_adc "modular_adc_0"
+Info: nios2_gen2_0: "Embed" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_flash_0: "Embed" instantiated altera_onchip_flash "onchip_flash_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'Embed_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Embed_onchip_memory2_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0013_onchip_memory2_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0013_onchip_memory2_0_gen//Embed_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0013_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'Embed_onchip_memory2_0'
+Info: onchip_memory2_0: "Embed" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sdram: Starting RTL generation for module 'Embed_sdram'
+Info: sdram:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=Embed_sdram --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0014_sdram_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0014_sdram_gen//Embed_sdram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0014_sdram_gen/  ]
+Info: sdram: Done RTL generation for module 'Embed_sdram'
+Info: sdram: "Embed" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: slide_pio: Starting RTL generation for module 'Embed_slide_pio'
+Info: slide_pio:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Embed_slide_pio --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0015_slide_pio_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0015_slide_pio_gen//Embed_slide_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0015_slide_pio_gen/  ]
+Info: slide_pio: Done RTL generation for module 'Embed_slide_pio'
+Info: slide_pio: "Embed" instantiated altera_avalon_pio "slide_pio"
+Info: spi_0: Starting RTL generation for module 'Embed_spi_0'
+Info: spi_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=Embed_spi_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0016_spi_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0016_spi_0_gen//Embed_spi_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0016_spi_0_gen/  ]
+Info: spi_0: Done RTL generation for module 'Embed_spi_0'
+Info: spi_0: "Embed" instantiated altera_avalon_spi "spi_0"
+Info: sysid: "Embed" instantiated altera_avalon_sysid_qsys "sysid"
+Info: timer_0: Starting RTL generation for module 'Embed_timer_0'
+Info: timer_0:   Generation command is [exec E:/intelFPGA_lite/16.1/quartus/bin64//perl/bin/perl.exe -I E:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=Embed_timer_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0018_timer_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0018_timer_0_gen//Embed_timer_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0018_timer_0_gen/  ]
+Info: timer_0: Done RTL generation for module 'Embed_timer_0'
+Info: timer_0: "Embed" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Embed" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "Embed" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "Embed" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "Embed" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "Embed" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_std_synchronizer_nocut.v
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: adc_monitor_internal: "modular_adc_0" instantiated altera_trace_adc_monitor "adc_monitor_internal"
+Info: sequencer_internal: "modular_adc_0" instantiated altera_modular_adc_sequencer "sequencer_internal"
+Info: sample_store_internal: "modular_adc_0" instantiated altera_modular_adc_sample_store "sample_store_internal"
+Info: st_splitter_internal: "modular_adc_0" instantiated altera_avalon_st_splitter "st_splitter_internal"
+Info: avalon_st_adapter: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: cpu: Starting RTL generation for module 'Embed_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec E:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I E:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Embed_nios2_gen2_0_cpu --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0034_cpu_gen/ --quartus_bindir=E:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0034_cpu_gen//Embed_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0034_cpu_gen/  ]
+Info: cpu: # 2020.10.01 21:54:19 (*) Starting Nios II generation
+Info: cpu: # 2020.10.01 21:54:19 (*)   Checking for plaintext license.
+Info: cpu: # 2020.10.01 21:54:21 (*)   Couldn't query license setup in Quartus directory E:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2020.10.01 21:54:21 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.10.01 21:54:21 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.10.01 21:54:21 (*)   Plaintext license not found.
+Info: cpu: # 2020.10.01 21:54:21 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2020.10.01 21:54:22 (*)   Couldn't query license setup in Quartus directory E:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2020.10.01 21:54:22 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.10.01 21:54:22 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.10.01 21:54:22 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2020.10.01 21:54:22 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.10.01 21:54:22 (*)   Creating all objects for CPU
+Info: cpu: # 2020.10.01 21:54:22 (*)     Testbench
+Info: cpu: # 2020.10.01 21:54:22 (*)     Instruction decoding
+Info: cpu: # 2020.10.01 21:54:22 (*)       Instruction fields
+Info: cpu: # 2020.10.01 21:54:23 (*)       Instruction decodes
+Info: cpu: # 2020.10.01 21:54:23 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2020.10.01 21:54:24 (*)       Instruction controls
+Info: cpu: # 2020.10.01 21:54:24 (*)     Pipeline frontend
+Info: cpu: # 2020.10.01 21:54:24 (*)     Pipeline backend
+Info: cpu: # 2020.10.01 21:54:28 (*)   Creating 'C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0034_cpu_gen//Embed_nios2_gen2_0_cpu_nios2_waves.do'
+Info: cpu: # 2020.10.01 21:54:28 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.10.01 21:54:31 (*)   Creating encrypted RTL
+Info: cpu: # 2020.10.01 21:54:31 (*)   Creating IP functional simulation model
+Info: cpu: # 2020.10.01 21:54:58 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Embed_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: onchip_flash_0_csr_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_flash_0_csr_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: onchip_flash_0_csr_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_flash_0_csr_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: router_012: "mm_interconnect_0" instantiated altera_merlin_router "router_012"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_007: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_007"
+Info: rsp_demux_010: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_010"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_st_clock_crosser.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_std_synchronizer_nocut.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_005: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_005"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/submodules/altera_merlin_arbitrator.sv
+Info: altera_trace_adc_monitor_wa_inst: "Generating: altera_trace_adc_monitor_wa_inst"
+Info: core: "adc_monitor_internal" instantiated altera_trace_adc_monitor_core "core"
+Info: trace_endpoint: "adc_monitor_internal" instantiated altera_trace_monitor_endpoint "trace_endpoint"
+Info: data_format_adapter_0: "avalon_st_adapter" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_1"
+Info: data_format_adapter_0: "avalon_st_adapter_001" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_1"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_005" instantiated error_adapter "error_adapter_0"
+Info: altera_trace_adc_monitor_wa_inst: "core" instantiated altera_trace_adc_monitor_core "altera_trace_adc_monitor_wa_inst"
+Info: altera_trace_adc_monitor_wa_inst: "altera_trace_adc_monitor_wa_inst" instantiated altera_trace_adc_monitor_wa "altera_trace_adc_monitor_wa_inst"
+Info: Embed: Done "Embed" with 85 modules, 146 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=E:\repos\ECEN5863_projects\DE10liteEmbed\Embed\Embed.spd --output-directory=E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=E:\repos\ECEN5863_projects\DE10liteEmbed\Embed\Embed.spd --output-directory=E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	72 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\repos\ECEN5863_projects\DE10liteEmbed\Embed.qsys --block-symbol-file --output-directory=E:\repos\ECEN5863_projects\DE10liteEmbed\Embed --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10liteEmbed/Embed.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 16.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding altpll_1 [altpll 16.1]
+Progress: Parameterizing module altpll_1
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 16.1]
+Progress: Parameterizing module clk_1
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding led_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module led_pio
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 16.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_flash_0 [altera_onchip_flash 16.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram
+Progress: Adding slide_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module slide_pio
+Progress: Adding spi_0 [altera_avalon_spi 16.1]
+Progress: Parameterizing module spi_0
+Progress: Adding sysid [altera_avalon_sysid_qsys 16.1]
+Progress: Parameterizing module sysid
+Progress: Adding timer_0 [altera_avalon_timer 16.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Embed.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Embed.modular_adc_0.control_internal.response/st_splitter_internal.in: The sink has a empty signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out0/sample_store_internal.response: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out1/adc_monitor_internal.adc_data: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: Embed.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: Embed.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\repos\ECEN5863_projects\DE10liteEmbed\Embed.qsys --synthesis=VERILOG --output-directory=E:\repos\ECEN5863_projects\DE10liteEmbed\Embed\synthesis --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10liteEmbed/Embed.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 16.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding altpll_1 [altpll 16.1]
+Progress: Parameterizing module altpll_1
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 16.1]
+Progress: Parameterizing module clk_1
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding led_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module led_pio
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 16.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 16.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_flash_0 [altera_onchip_flash 16.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram
+Progress: Adding slide_pio [altera_avalon_pio 16.1]
+Progress: Parameterizing module slide_pio
+Progress: Adding spi_0 [altera_avalon_spi 16.1]
+Progress: Parameterizing module spi_0
+Progress: Adding sysid [altera_avalon_sysid_qsys 16.1]
+Progress: Parameterizing module sysid
+Progress: Adding timer_0 [altera_avalon_timer 16.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Embed.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Embed.modular_adc_0.control_internal.response/st_splitter_internal.in: The sink has a empty signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out0/sample_store_internal.response: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.modular_adc_0.st_splitter_internal.out1/adc_monitor_internal.adc_data: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Embed.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: Embed.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: Embed.sysid: Time stamp will be automatically updated when this component is generated.
+Info: Embed: Generating Embed "Embed" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+Info: Inserting clock-crossing logic between cmd_demux_002.src4 and cmd_mux_009.sink0
+Info: Inserting clock-crossing logic between cmd_demux_002.src5 and cmd_mux_010.sink0
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+Info: Inserting clock-crossing logic between rsp_demux_009.src0 and rsp_mux_002.sink4
+Info: Inserting clock-crossing logic between rsp_demux_010.src0 and rsp_mux_002.sink5
+Info: altpll_0: "Embed" instantiated altpll "altpll_0"
+Info: altpll_1: "Embed" instantiated altpll "altpll_1"
+Info: jtag_uart_0: Starting RTL generation for module 'Embed_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Embed_jtag_uart_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0085_jtag_uart_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0085_jtag_uart_0_gen//Embed_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'Embed_jtag_uart_0'
+Info: jtag_uart_0: "Embed" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: led_pio: Starting RTL generation for module 'Embed_led_pio'
+Info: led_pio:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Embed_led_pio --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0086_led_pio_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0086_led_pio_gen//Embed_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'Embed_led_pio'
+Info: led_pio: "Embed" instantiated altera_avalon_pio "led_pio"
+Info: master_0: "Embed" instantiated altera_jtag_avalon_master "master_0"
+Info: mm_clock_crossing_bridge_0: "Embed" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_001: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_002: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_1
+Info: modular_adc_0: "Embed" instantiated altera_modular_adc "modular_adc_0"
+Info: nios2_gen2_0: "Embed" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_flash_0: Generating top-level entity altera_onchip_flash
+Info: onchip_flash_0: "Embed" instantiated altera_onchip_flash "onchip_flash_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'Embed_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Embed_onchip_memory2_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0089_onchip_memory2_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0089_onchip_memory2_0_gen//Embed_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'Embed_onchip_memory2_0'
+Info: onchip_memory2_0: "Embed" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sdram: Starting RTL generation for module 'Embed_sdram'
+Info: sdram:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=Embed_sdram --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0090_sdram_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0090_sdram_gen//Embed_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'Embed_sdram'
+Info: sdram: "Embed" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: slide_pio: Starting RTL generation for module 'Embed_slide_pio'
+Info: slide_pio:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Embed_slide_pio --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0091_slide_pio_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0091_slide_pio_gen//Embed_slide_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: slide_pio: Done RTL generation for module 'Embed_slide_pio'
+Info: slide_pio: "Embed" instantiated altera_avalon_pio "slide_pio"
+Info: spi_0: Starting RTL generation for module 'Embed_spi_0'
+Info: spi_0:   Generation command is [exec E:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I E:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=Embed_spi_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0092_spi_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0092_spi_0_gen//Embed_spi_0_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_0: Done RTL generation for module 'Embed_spi_0'
+Info: spi_0: "Embed" instantiated altera_avalon_spi "spi_0"
+Info: sysid: "Embed" instantiated altera_avalon_sysid_qsys "sysid"
+Info: timer_0: Starting RTL generation for module 'Embed_timer_0'
+Info: timer_0:   Generation command is [exec E:/intelFPGA_lite/16.1/quartus/bin64//perl/bin/perl.exe -I E:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=Embed_timer_0 --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0094_timer_0_gen/ --quartus_dir=E:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0094_timer_0_gen//Embed_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'Embed_timer_0'
+Info: timer_0: "Embed" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Embed" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "Embed" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "Embed" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "Embed" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "Embed" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_std_synchronizer_nocut.v
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: adc_monitor_internal: "modular_adc_0" instantiated altera_trace_adc_monitor "adc_monitor_internal"
+Info: sequencer_internal: "modular_adc_0" instantiated altera_modular_adc_sequencer "sequencer_internal"
+Info: sample_store_internal: "modular_adc_0" instantiated altera_modular_adc_sample_store "sample_store_internal"
+Info: st_splitter_internal: "modular_adc_0" instantiated altera_avalon_st_splitter "st_splitter_internal"
+Info: avalon_st_adapter: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: cpu: Starting RTL generation for module 'Embed_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec E:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I E:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I E:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- E:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Embed_nios2_gen2_0_cpu --dir=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0110_cpu_gen/ --quartus_bindir=E:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/brian/AppData/Local/Temp/alt8537_3474723078193978523.dir/0110_cpu_gen//Embed_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.10.01 21:56:05 (*) Starting Nios II generation
+Info: cpu: # 2020.10.01 21:56:05 (*)   Checking for plaintext license.
+Info: cpu: # 2020.10.01 21:56:06 (*)   Couldn't query license setup in Quartus directory E:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2020.10.01 21:56:06 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.10.01 21:56:06 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.10.01 21:56:06 (*)   Plaintext license not found.
+Info: cpu: # 2020.10.01 21:56:06 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2020.10.01 21:56:07 (*)   Couldn't query license setup in Quartus directory E:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2020.10.01 21:56:07 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.10.01 21:56:07 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.10.01 21:56:07 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2020.10.01 21:56:07 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.10.01 21:56:07 (*)   Creating all objects for CPU
+Info: cpu: # 2020.10.01 21:56:07 (*)     Testbench
+Info: cpu: # 2020.10.01 21:56:07 (*)     Instruction decoding
+Info: cpu: # 2020.10.01 21:56:07 (*)       Instruction fields
+Info: cpu: # 2020.10.01 21:56:07 (*)       Instruction decodes
+Info: cpu: # 2020.10.01 21:56:08 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2020.10.01 21:56:08 (*)       Instruction controls
+Info: cpu: # 2020.10.01 21:56:08 (*)     Pipeline frontend
+Info: cpu: # 2020.10.01 21:56:08 (*)     Pipeline backend
+Info: cpu: # 2020.10.01 21:56:12 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.10.01 21:56:15 (*)   Creating encrypted RTL
+Info: cpu: # 2020.10.01 21:56:16 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Embed_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: onchip_flash_0_csr_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_flash_0_csr_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: onchip_flash_0_csr_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_flash_0_csr_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: router_012: "mm_interconnect_0" instantiated altera_merlin_router "router_012"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_007: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_007"
+Info: rsp_demux_010: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_010"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_std_synchronizer_nocut.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_005: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_005"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/repos/ECEN5863_projects/DE10liteEmbed/Embed/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: altera_trace_adc_monitor_wa_inst: "Generating: altera_trace_adc_monitor_wa_inst"
+Info: core: "adc_monitor_internal" instantiated altera_trace_adc_monitor_core "core"
+Info: trace_endpoint: "adc_monitor_internal" instantiated altera_trace_monitor_endpoint "trace_endpoint"
+Info: data_format_adapter_0: "avalon_st_adapter" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_1"
+Info: data_format_adapter_0: "avalon_st_adapter_001" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_1"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_005" instantiated error_adapter "error_adapter_0"
+Info: altera_trace_adc_monitor_wa_inst: "core" instantiated altera_trace_adc_monitor_core "altera_trace_adc_monitor_wa_inst"
+Info: altera_trace_adc_monitor_wa_inst: "altera_trace_adc_monitor_wa_inst" instantiated altera_trace_adc_monitor_wa "altera_trace_adc_monitor_wa_inst"
+Info: Embed: Done "Embed" with 85 modules, 138 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

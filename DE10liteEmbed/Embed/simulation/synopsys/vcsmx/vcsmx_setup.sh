@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 16.1 196 win32 2020.10.01.21:55:02
+# ACDS 16.1 196 win32 2020.10.03.06:58:23
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -101,7 +101,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 win32 2020.10.01.21:55:02
+# ACDS 16.1 196 win32 2020.10.03.06:58:23
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="Embed"
@@ -203,14 +203,14 @@ mkdir -p ./libraries/sysid/
 mkdir -p ./libraries/spi_0/
 mkdir -p ./libraries/slide_pio/
 mkdir -p ./libraries/sdram/
-mkdir -p ./libraries/onchip_memory2_0/
+mkdir -p ./libraries/onchip_ram/
 mkdir -p ./libraries/onchip_flash_0/
 mkdir -p ./libraries/nios2_gen2_0/
 mkdir -p ./libraries/modular_adc_0/
 mkdir -p ./libraries/mm_clock_crossing_bridge_0/
 mkdir -p ./libraries/master_0/
 mkdir -p ./libraries/led_pio/
-mkdir -p ./libraries/jtag_uart_0/
+mkdir -p ./libraries/jtag_uart/
 mkdir -p ./libraries/altpll_1/
 mkdir -p ./libraries/altpll_0/
 mkdir -p ./libraries/altera_ver/
@@ -380,7 +380,7 @@ if [ $SKIP_COM -eq 0 ]; then
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_spi_0.v"                                                      -work spi_0                              
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_slide_pio.v"                                                  -work slide_pio                          
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_sdram.v"                                                      -work sdram                              
-  vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_onchip_memory2_0.v"                                           -work onchip_memory2_0                   
+  vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_onchip_ram.v"                                                 -work onchip_ram                         
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/altera_onchip_flash_util.v"                                         -work onchip_flash_0                     
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/altera_onchip_flash.v"                                              -work onchip_flash_0                     
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/altera_onchip_flash_avmm_data_controller.v"                         -work onchip_flash_0                     
@@ -393,7 +393,7 @@ if [ $SKIP_COM -eq 0 ]; then
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v"                                    -work mm_clock_crossing_bridge_0         
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_master_0.v"                                                   -work master_0                           
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_led_pio.v"                                                    -work led_pio                            
-  vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_jtag_uart_0.v"                                                -work jtag_uart_0                        
+  vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_jtag_uart.v"                                                  -work jtag_uart                          
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_altpll_1.vo"                                                  -work altpll_1                           
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Embed_altpll_0.vo"                                                  -work altpll_0                           
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/Embed.v"                                                                                                                

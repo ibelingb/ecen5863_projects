@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 16.1 196 win32 2020.10.01.21:55:02
+# ACDS 16.1 196 win32 2020.10.03.06:58:23
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 win32 2020.10.01.21:55:02
+# ACDS 16.1 196 win32 2020.10.03.06:58:23
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="Embed"
@@ -265,7 +265,7 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/Embed_spi_0.v \
   $QSYS_SIMDIR/submodules/Embed_slide_pio.v \
   $QSYS_SIMDIR/submodules/Embed_sdram.v \
-  $QSYS_SIMDIR/submodules/Embed_onchip_memory2_0.v \
+  $QSYS_SIMDIR/submodules/Embed_onchip_ram.v \
   $QSYS_SIMDIR/submodules/altera_onchip_flash_util.v \
   $QSYS_SIMDIR/submodules/altera_onchip_flash.v \
   $QSYS_SIMDIR/submodules/altera_onchip_flash_avmm_data_controller.v \
@@ -277,7 +277,7 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/altera_dcfifo_synchronizer_bundle.v \
   $QSYS_SIMDIR/submodules/Embed_master_0.v \
   $QSYS_SIMDIR/submodules/Embed_led_pio.v \
-  $QSYS_SIMDIR/submodules/Embed_jtag_uart_0.v \
+  $QSYS_SIMDIR/submodules/Embed_jtag_uart.v \
   $QSYS_SIMDIR/submodules/Embed_altpll_1.vo \
   $QSYS_SIMDIR/submodules/Embed_altpll_0.vo \
   $QSYS_SIMDIR/Embed.v \

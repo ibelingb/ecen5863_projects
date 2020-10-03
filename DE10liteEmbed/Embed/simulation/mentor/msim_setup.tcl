@@ -92,7 +92,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 win32 2020.10.01.21:55:02
+# ACDS 16.1 196 win32 2020.10.03.06:58:23
 
 # ----------------------------------------
 # Initialize variables
@@ -298,8 +298,8 @@ ensure_lib                                     ./libraries/slide_pio/
 vmap       slide_pio                           ./libraries/slide_pio/                          
 ensure_lib                                     ./libraries/sdram/                              
 vmap       sdram                               ./libraries/sdram/                              
-ensure_lib                                     ./libraries/onchip_memory2_0/                   
-vmap       onchip_memory2_0                    ./libraries/onchip_memory2_0/                   
+ensure_lib                                     ./libraries/onchip_ram/                         
+vmap       onchip_ram                          ./libraries/onchip_ram/                         
 ensure_lib                                     ./libraries/onchip_flash_0/                     
 vmap       onchip_flash_0                      ./libraries/onchip_flash_0/                     
 ensure_lib                                     ./libraries/nios2_gen2_0/                       
@@ -312,8 +312,8 @@ ensure_lib                                     ./libraries/master_0/
 vmap       master_0                            ./libraries/master_0/                           
 ensure_lib                                     ./libraries/led_pio/                            
 vmap       led_pio                             ./libraries/led_pio/                            
-ensure_lib                                     ./libraries/jtag_uart_0/                        
-vmap       jtag_uart_0                         ./libraries/jtag_uart_0/                        
+ensure_lib                                     ./libraries/jtag_uart/                          
+vmap       jtag_uart                           ./libraries/jtag_uart/                          
 ensure_lib                                     ./libraries/altpll_1/                           
 vmap       altpll_1                            ./libraries/altpll_1/                           
 ensure_lib                                     ./libraries/altpll_0/                           
@@ -460,7 +460,7 @@ alias com {
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_spi_0.v"                                                      -work spi_0                              
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_slide_pio.v"                                                  -work slide_pio                          
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_sdram.v"                                                      -work sdram                              
-  eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_onchip_memory2_0.v"                                           -work onchip_memory2_0                   
+  eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_onchip_ram.v"                                                 -work onchip_ram                         
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_onchip_flash_util.v"                                         -work onchip_flash_0                     
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_onchip_flash.v"                                              -work onchip_flash_0                     
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_onchip_flash_avmm_data_controller.v"                         -work onchip_flash_0                     
@@ -473,7 +473,7 @@ alias com {
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v"                                    -work mm_clock_crossing_bridge_0         
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_master_0.v"                                                   -work master_0                           
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_led_pio.v"                                                    -work led_pio                            
-  eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_jtag_uart_0.v"                                                -work jtag_uart_0                        
+  eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_jtag_uart.v"                                                  -work jtag_uart                          
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_altpll_1.vo"                                                  -work altpll_1                           
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Embed_altpll_0.vo"                                                  -work altpll_0                           
   eval  vlog $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/Embed.v"                                                                                                                
@@ -483,14 +483,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_trace_adc_monitor_wa_inst -L error_adapter_0 -L timing_adapter_1 -L timing_adapter_0 -L data_format_adapter_0 -L trace_endpoint -L core -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L router_001 -L router -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L sdram_s1_rsp_width_adapter -L rsp_mux_002 -L rsp_mux_001 -L rsp_demux_010 -L rsp_demux_007 -L rsp_demux_001 -L cmd_mux_001 -L cmd_demux_002 -L cmd_demux_001 -L sdram_s1_burst_adapter -L nios2_gen2_0_data_master_limiter -L router_012 -L router_010 -L router_008 -L router_004 -L router_003 -L router_002 -L onchip_flash_0_csr_agent -L nios2_gen2_0_data_master_agent -L onchip_flash_0_csr_translator -L nios2_gen2_0_data_master_translator -L cpu -L avalon_st_adapter_001 -L st_splitter_internal -L sample_store_internal -L sequencer_internal -L adc_monitor_internal -L control_internal -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L timer_0 -L sysid -L spi_0 -L slide_pio -L sdram -L onchip_memory2_0 -L onchip_flash_0 -L nios2_gen2_0 -L modular_adc_0 -L mm_clock_crossing_bridge_0 -L master_0 -L led_pio -L jtag_uart_0 -L altpll_1 -L altpll_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver $TOP_LEVEL_NAME
+  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_trace_adc_monitor_wa_inst -L error_adapter_0 -L timing_adapter_1 -L timing_adapter_0 -L data_format_adapter_0 -L trace_endpoint -L core -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L router_001 -L router -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L sdram_s1_rsp_width_adapter -L rsp_mux_002 -L rsp_mux_001 -L rsp_demux_010 -L rsp_demux_007 -L rsp_demux_001 -L cmd_mux_001 -L cmd_demux_002 -L cmd_demux_001 -L sdram_s1_burst_adapter -L nios2_gen2_0_data_master_limiter -L router_012 -L router_010 -L router_008 -L router_004 -L router_003 -L router_002 -L onchip_flash_0_csr_agent -L nios2_gen2_0_data_master_agent -L onchip_flash_0_csr_translator -L nios2_gen2_0_data_master_translator -L cpu -L avalon_st_adapter_001 -L st_splitter_internal -L sample_store_internal -L sequencer_internal -L adc_monitor_internal -L control_internal -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L timer_0 -L sysid -L spi_0 -L slide_pio -L sdram -L onchip_ram -L onchip_flash_0 -L nios2_gen2_0 -L modular_adc_0 -L mm_clock_crossing_bridge_0 -L master_0 -L led_pio -L jtag_uart -L altpll_1 -L altpll_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with novopt option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_trace_adc_monitor_wa_inst -L error_adapter_0 -L timing_adapter_1 -L timing_adapter_0 -L data_format_adapter_0 -L trace_endpoint -L core -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L router_001 -L router -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L sdram_s1_rsp_width_adapter -L rsp_mux_002 -L rsp_mux_001 -L rsp_demux_010 -L rsp_demux_007 -L rsp_demux_001 -L cmd_mux_001 -L cmd_demux_002 -L cmd_demux_001 -L sdram_s1_burst_adapter -L nios2_gen2_0_data_master_limiter -L router_012 -L router_010 -L router_008 -L router_004 -L router_003 -L router_002 -L onchip_flash_0_csr_agent -L nios2_gen2_0_data_master_agent -L onchip_flash_0_csr_translator -L nios2_gen2_0_data_master_translator -L cpu -L avalon_st_adapter_001 -L st_splitter_internal -L sample_store_internal -L sequencer_internal -L adc_monitor_internal -L control_internal -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L timer_0 -L sysid -L spi_0 -L slide_pio -L sdram -L onchip_memory2_0 -L onchip_flash_0 -L nios2_gen2_0 -L modular_adc_0 -L mm_clock_crossing_bridge_0 -L master_0 -L led_pio -L jtag_uart_0 -L altpll_1 -L altpll_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver $TOP_LEVEL_NAME
+  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_trace_adc_monitor_wa_inst -L error_adapter_0 -L timing_adapter_1 -L timing_adapter_0 -L data_format_adapter_0 -L trace_endpoint -L core -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L router_001 -L router -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L sdram_s1_rsp_width_adapter -L rsp_mux_002 -L rsp_mux_001 -L rsp_demux_010 -L rsp_demux_007 -L rsp_demux_001 -L cmd_mux_001 -L cmd_demux_002 -L cmd_demux_001 -L sdram_s1_burst_adapter -L nios2_gen2_0_data_master_limiter -L router_012 -L router_010 -L router_008 -L router_004 -L router_003 -L router_002 -L onchip_flash_0_csr_agent -L nios2_gen2_0_data_master_agent -L onchip_flash_0_csr_translator -L nios2_gen2_0_data_master_translator -L cpu -L avalon_st_adapter_001 -L st_splitter_internal -L sample_store_internal -L sequencer_internal -L adc_monitor_internal -L control_internal -L p2b_adapter -L b2p_adapter -L transacto -L p2b -L b2p -L fifo -L timing_adt -L jtag_phy_embedded_in_jtag_master -L rst_controller -L irq_synchronizer -L irq_mapper -L mm_interconnect_1 -L mm_interconnect_0 -L timer_0 -L sysid -L spi_0 -L slide_pio -L sdram -L onchip_ram -L onchip_flash_0 -L nios2_gen2_0 -L modular_adc_0 -L mm_clock_crossing_bridge_0 -L master_0 -L led_pio -L jtag_uart -L altpll_1 -L altpll_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

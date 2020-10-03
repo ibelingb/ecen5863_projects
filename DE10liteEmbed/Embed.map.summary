@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Oct 02 17:24:41 2020
+Analysis & Synthesis Status : Successful - Sat Oct 03 07:42:29 2020
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Embed
 Top-level Entity Name : DE10_LITE_Default
 Family : MAX 10
-Total logic elements : 12,416
-    Total combinational functions : 9,470
+Total logic elements : 12,412
+    Total combinational functions : 9,466
     Dedicated logic registers : 7,497
 Total registers : 7497
 Total pins : 185
