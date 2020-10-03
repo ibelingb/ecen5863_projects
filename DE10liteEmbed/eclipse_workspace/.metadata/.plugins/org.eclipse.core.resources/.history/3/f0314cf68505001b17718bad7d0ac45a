@@ -86,10 +86,7 @@ int main(void)
     delay_wait();                                   // see src/delay_wait.c
 
     // count until we reach all the maximum count
-    while( (binary_count < MAX_COUNT && dir > 0) ||
-    	   (binary_count > 0 && dir == -1) ||
-    	   (binary_count > 10 && dir == -10)
-    	   )
+    while( (binary_count < MAX_COUNT && dir > 0) || (binary_count > 0 && dir < 0) )
     {
         // increment the binary counter
         binary_count= binary_count + dir;

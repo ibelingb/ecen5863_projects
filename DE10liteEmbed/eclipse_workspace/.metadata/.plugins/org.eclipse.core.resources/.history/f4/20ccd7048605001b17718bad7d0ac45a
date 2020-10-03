@@ -88,7 +88,8 @@ int main(void)
     // count until we reach all the maximum count
     while( (binary_count < MAX_COUNT && dir > 0) ||
     	   (binary_count > 0 && dir == -1) ||
-    	   (binary_count > 10 && dir == -10)
+    	   (binary_count > 10 && dir == -10) ||
+    	   (binary_count < MAX_COUNT && dir == 5)
     	   )
     {
         // increment the binary counter

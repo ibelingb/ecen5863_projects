@@ -37,8 +37,6 @@ int main(void)
     alt_printf("\nPress 'u' to count up\n");
     alt_printf("Press 'd' to count down\n");
     alt_printf("Press '3' to count by threes\n");
-    alt_printf("Press 't' to down count by tens\n");
-    alt_printf("Press '5' to up count by fives\n");
     input = alt_getchar();
     alt_getchar();
     alt_printf("You selected: '%c'\n",input);
@@ -56,16 +54,6 @@ int main(void)
         dir = 3;
     	binary_count = 0;
         alt_printf(" -  counting up by 3\n");
-    }
-    else if (input == 't') {
-        dir = -10;
-        binary_count = MAX_COUNT;
-        alt_printf(" -  counting down by 10\n");
-    }
-    else if (input == '5') {
-        dir = 5;
-    	binary_count = 0;
-        alt_printf(" -  counting up by 5\n");
     }
     else {
         dir = 1;
@@ -86,10 +74,7 @@ int main(void)
     delay_wait();                                   // see src/delay_wait.c
 
     // count until we reach all the maximum count
-    while( (binary_count < MAX_COUNT && dir > 0) ||
-    	   (binary_count > 0 && dir == -1) ||
-    	   (binary_count > 10 && dir == -10)
-    	   )
+    while( (binary_count < MAX_COUNT && dir > 0) || (binary_count > 0 && dir < 0) )
     {
         // increment the binary counter
         binary_count= binary_count + dir;
