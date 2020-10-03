@@ -104,12 +104,10 @@ int main(void)
         delay_wait();                                   // see src/delay_wait.c
     }
 
-    // If down-counting by 10 and binary_count is below 10, then set LEDs to all off.
-    if(binary_count < 10 && dir == -10) {
+    if(binary_count > 10 && dir == -10) {
     	binary_count = 0;
     	update_led(binary_count);
     }
-
     // announce loop completion on STDOUT and the UART
     alt_printf("\n\n LED control program completed its loop ...\n\n");
 

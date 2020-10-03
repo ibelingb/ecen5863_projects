@@ -7,7 +7,8 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
- <window width="1577" height="1410" x="983" y="0" />
+ <library
+   expandedCategories="Library/Memory Interfaces and Controllers/Memory Interfaces with UniPHY,Library/University Program/Clock,Library/Basic Functions/Configuration and Programming,Library/DSP,Library/DSP/Video and Image Processing,Library/Basic Functions,Library,Library/University Program,Library/Basic Functions/On Chip Memory,Library/Memory Interfaces and Controllers,Project,Library/University Program/Memory,Library/Memory Interfaces and Controllers/SDRAM,Library/Memory Interfaces and Controllers/Memory Interfaces with ALTMEMPHY" />
+ <window width="1577" height="1410" x="987" y="0" />
  <generation simulation="VERILOG" />
 </preferences>

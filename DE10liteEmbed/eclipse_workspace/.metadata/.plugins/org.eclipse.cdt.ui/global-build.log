@@ -1,4 +1,4 @@
-08:37:57 **** Incremental Build of configuration Nios II for project Embed_System ****
+14:47:08 **** Incremental Build of configuration Nios II for project Embed_System ****
 make all 
 Info: Building ../Embed_System_bsp/
 E:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
@@ -13,13 +13,25 @@ Info:                    15 KBytes free for stack + heap.
 Info: Creating Embed_System.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source Embed_System.elf >Embed_System.objdump
 [Embed_System build complete]
-08:38:05 **** Build of configuration Nios II for project Embed_System ****
+14:47:51 **** Build of configuration Nios II for project Embed_System ****
 make all 
 Info: Building ../Embed_System_bsp/
 E:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
 [BSP build complete]
 [Embed_System build complete]
-08:38:07 **** Incremental Build of configuration Nios II for project Embed_System ****
+14:47:53 **** Incremental Build of configuration Nios II for project Embed_System ****
+make all 
+Info: Building ../Embed_System_bsp/
+E:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
+[BSP build complete]
+[Embed_System build complete]
+14:49:46 **** Build of configuration Nios II for project Embed_System ****
+make all 
+Info: Building ../Embed_System_bsp/
+E:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
+[BSP build complete]
+[Embed_System build complete]
+14:49:48 **** Incremental Build of configuration Nios II for project Embed_System ****
 make all 
 Info: Building ../Embed_System_bsp/
 E:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
