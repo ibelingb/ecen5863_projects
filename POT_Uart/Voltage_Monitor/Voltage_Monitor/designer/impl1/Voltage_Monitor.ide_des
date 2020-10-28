@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\designer\impl1\Voltage_Monitor.adb"
+LIST SOURCE_FILES
+VALUE "E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\component\work\Voltage_Monitor\Voltage_Monitor.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

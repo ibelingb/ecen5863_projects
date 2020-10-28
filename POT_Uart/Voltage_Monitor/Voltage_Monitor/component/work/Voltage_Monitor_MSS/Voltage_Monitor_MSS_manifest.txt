@@ -1,0 +1,21 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+
+Date      :  Wed Oct 28 17:30:53 2020
+Project   :  E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor
+Component :  Voltage_Monitor_MSS
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/work/Voltage_Monitor_MSS/MSS_CCC_0/Voltage_Monitor_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/work/Voltage_Monitor_MSS/Voltage_Monitor_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/work/Voltage_Monitor_MSS/mss_tshell.v
+
+Stimulus files for all Simulation tools:
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    E:/repos/ECEN5863_projects/POT_Uart/Voltage_Monitor/Voltage_Monitor/component/work/Voltage_Monitor_MSS/MSS_ENVM_0/test.bfm
+
