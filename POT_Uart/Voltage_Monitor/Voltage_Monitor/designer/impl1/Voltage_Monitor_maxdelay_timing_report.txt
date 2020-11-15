@@ -1,0 +1,454 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.8
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+Date: Sat Oct 31 10:50:46 2020
+
+
+Design: Voltage_Monitor
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       12.500
+Required Frequency (MHz):   80.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       12.500
+Required Frequency (MHz):   80.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       12.500
+Required Frequency (MHz):   80.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.571
+Max Clock-To-Out (ns):      13.159
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       12.500
+Required Frequency (MHz):   80.000
+External Setup (ns):        -5.434
+External Hold (ns):         4.176
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               Voltage_Monitor_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_29_OUT
+  Delay (ns):                  8.984
+  Slack (ns):
+  Arrival (ns):                13.159
+  Required (ns):
+  Clock to Out (ns):           13.159
+
+Path 2
+  From:                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_30_OUT
+  Delay (ns):                  8.802
+  Slack (ns):
+  Arrival (ns):                12.977
+  Required (ns):
+  Clock to Out (ns):           12.977
+
+Path 3
+  From:                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_31_OUT
+  Delay (ns):                  8.765
+  Slack (ns):
+  Arrival (ns):                12.940
+  Required (ns):
+  Clock to Out (ns):           12.940
+
+Path 4
+  From:                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          GPIO_28_OUT
+  Delay (ns):                  8.591
+  Slack (ns):
+  Arrival (ns):                12.766
+  Required (ns):
+  Clock to Out (ns):           12.766
+
+
+Expanded Path 1
+  From: Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To: GPIO_29_OUT
+  data required time                             N/C
+  data arrival time                          -   13.159
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_pclk1
+               +     0.000          Clock source
+  0.000                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     4.175          Clock generation
+  4.175
+               +     4.978          cell: ADLIB:MSS_APB_IP
+  9.153                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[29] (f)
+               +     0.000          net: Voltage_Monitor_MSS_0/GPO_net_0[29]
+  9.153                        Voltage_Monitor_MSS_0/MSS_GPIO_0_GPIO_29_OUT:D (f)
+               +     4.006          cell: ADLIB:IOPAD_TRI
+  13.159                       Voltage_Monitor_MSS_0/MSS_GPIO_0_GPIO_29_OUT:PAD (f)
+               +     0.000          net: GPIO_29_OUT
+  13.159                       GPIO_29_OUT (f)
+                                    
+  13.159                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     4.175          Clock generation
+  N/C
+                                    
+  N/C                          GPIO_29_OUT (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        MSS_RESET_N
+  To:                          Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):                  0.937
+  Slack (ns):
+  Arrival (ns):                0.937
+  Required (ns):
+  Setup (ns):                  -2.196
+  External Setup (ns):         -5.434
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        Voltage_Monitor_MSS_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        Voltage_Monitor_MSS_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: Voltage_Monitor_MSS_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          Voltage_Monitor_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     3.545          Clock generation
+  N/C
+               +     0.630          net: Voltage_Monitor_MSS_0/MSS_ADLIB_INST_FCLK
+  N/C                          Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain Voltage_Monitor_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

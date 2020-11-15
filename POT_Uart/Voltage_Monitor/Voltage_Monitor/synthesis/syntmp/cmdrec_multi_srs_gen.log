@@ -1,0 +1,7 @@
+E:\Microsemi\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  Voltage_Monitor  -multisrs  E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synwork\Voltage_Monitor_comp.srs  -osyn  E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synwork\Voltage_Monitor_mult.srs  -log  E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synlog\Voltage_Monitor_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+file:E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synwork\Voltage_Monitor_comp.srs|io:i|time:1603975689|size:23880|exec:0
+file:E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synwork\Voltage_Monitor_mult.srs|io:o|time:1603975691|size:2033|exec:0
+file:E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\synlog\Voltage_Monitor_multi_srs_gen.srr|io:o|time:1603975691|size:548|exec:0
+file:E:\Microsemi\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1479398858|size:3128320|exec:1
+file:E:\Microsemi\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1479399124|size:4208128|exec:1

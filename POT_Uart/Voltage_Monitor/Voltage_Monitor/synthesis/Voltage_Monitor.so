@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>Voltage_Monitor</design>
+	<target_edif>E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\synthesis\Voltage_Monitor.edn</target_edif>
+</SynplifyOutput>

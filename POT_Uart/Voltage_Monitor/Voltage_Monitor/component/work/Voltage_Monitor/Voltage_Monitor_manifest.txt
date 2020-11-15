@@ -1,6 +1,6 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
 
-Date      :  Wed Oct 28 17:31:43 2020
+Date      :  Thu Oct 29 06:46:49 2020
 Project   :  E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor
 Component :  Voltage_Monitor
 Family    :  SmartFusion

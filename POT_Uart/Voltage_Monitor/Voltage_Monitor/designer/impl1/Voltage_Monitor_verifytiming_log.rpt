@@ -1,0 +1,33 @@
+Microsemi Libero Software
+Version: 11.8.0.26
+Release: v11.8
+
+Info: The design Voltage_Monitor.adb was last modified by software version 11.8.0.26.
+Opened an existing Libero design Voltage_Monitor.adb.
+'BA_NAME' set to 'Voltage_Monitor_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+Wrote timing report to file: Voltage_Monitor_maxdelay_timing_report.txt
+
+The Report command succeeded ( 00:00:03 )
+Wrote timing report to file: Voltage_Monitor_mindelay_timing_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote timing_violations report to file: Voltage_Monitor_maxdelay_timingviolations_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote timing_violations report to file: Voltage_Monitor_mindelay_timingviolations_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Design saved to file
+E:\repos\ECEN5863_projects\POT_Uart\Voltage_Monitor\Voltage_Monitor\designer\impl1\Voltage_Moni\
+tor.adb.
+
+The Execute Script command succeeded ( 00:00:05 )
+Design closed.
+

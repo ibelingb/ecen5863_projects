@@ -51,7 +51,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927852"
+TIME="1603973724"
 SIZE="945"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
@@ -69,85 +69,85 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ACE\2.2.100\MSS_ACE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927839"
+TIME="1603973706"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="253"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="253"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="253"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="254"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="252"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="254"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="253"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="254"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
@@ -156,15 +156,20 @@ STATE="utd"
 TIME="1603890713"
 SIZE="2203"
 ENDFILE
-VALUE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.cxf,actgen_cxf"
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
 TIME="1603927903"
-SIZE="4425"
+SIZE="413"
+ENDFILE
+VALUE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.cxf,actgen_cxf"
+STATE="utd"
+TIME="1603975609"
+SIZE="4500"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.pdc,pdc"
 STATE="utd"
-TIME="1603927890"
-SIZE="5224"
+TIME="1603975605"
+SIZE="1754"
 PARENT="<project>\component\work\Voltage_Monitor\Voltage_Monitor.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -174,41 +179,41 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.v,hdl"
 STATE="utd"
-TIME="1603927891"
+TIME="1603975606"
 SIZE="2812"
 PARENT="<project>\component\work\Voltage_Monitor\Voltage_Monitor.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1603927839"
+TIME="1603973706"
 SIZE="31587"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\MSS_CCC_0\Voltage_Monitor_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="505"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\MSS_CCC_0\Voltage_Monitor_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1603927841"
+TIME="1603973708"
 SIZE="2871"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\MSS_CCC_0\Voltage_Monitor_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1603927846"
+TIME="1603973716"
 SIZE="17447"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1603927847"
+TIME="1603973717"
 SIZE="12226"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -220,35 +225,70 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1603927853"
+TIME="1603973726"
 SIZE="10391"
 ENDFILE
 VALUE "<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.v,hdl"
 STATE="utd"
-TIME="1603927852"
+TIME="1603973725"
 SIZE="19945"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor.adb,adb"
+STATE="utd"
+TIME="1603978459"
+SIZE="286208"
+ENDFILE
 VALUE "<project>\designer\impl1\Voltage_Monitor.ide_des,ide_des"
 STATE="utd"
-TIME="1603889650"
-SIZE="234"
+TIME="1603978460"
+SIZE="1182"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_compile_log.rpt,log"
+STATE="utd"
+TIME="1603975706"
+SIZE="34035"
 ENDFILE
 VALUE "<project>\designer\impl1\Voltage_Monitor_fp\projectData\Voltage_Monitor.pdb,pdb"
 STATE="utd"
-TIME="1603927353"
-SIZE="9034"
+TIME="1603976124"
+SIZE="38413"
 ENDFILE
 VALUE "<project>\designer\impl1\Voltage_Monitor_fp\Voltage_Monitor.pdb,pdb"
 STATE="utd"
-TIME="1603927346"
-SIZE="9034"
+TIME="1603976082"
+SIZE="38413"
 ENDFILE
 VALUE "<project>\designer\impl1\Voltage_Monitor_fp\Voltage_Monitor.pro,pro"
 STATE="utd"
-TIME="1603927353"
+TIME="1603976124"
 SIZE="2531"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_fp\Voltage_Monitor.stp,stp"
+STATE="ood"
+TIME="1603975530"
+SIZE="102411"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1603975727"
+SIZE="2747"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_timingconstraints_log.rpt,log"
+STATE="utd"
+TIME="1603978499"
+SIZE="278"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_verifypower_log.rpt,log"
+STATE="utd"
+TIME="1603941667"
+SIZE="975"
+ENDFILE
+VALUE "<project>\designer\impl1\Voltage_Monitor_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1603978460"
+SIZE="1271"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
@@ -258,13 +298,13 @@ PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1603927891"
+TIME="1603975606"
 SIZE="602"
 PARENT="<project>\component\work\Voltage_Monitor\Voltage_Monitor.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1603927842"
+TIME="1603973710"
 SIZE="9888"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
 ENDFILE
@@ -273,6 +313,26 @@ STATE="utd"
 TIME="1603890748"
 SIZE="670"
 PARENT="<project>\component\work\Voltage_Monitor_MSS\Voltage_Monitor_MSS.cxf"
+ENDFILE
+VALUE "<project>\synthesis\Voltage_Monitor.edn,syn_edn"
+STATE="utd"
+TIME="1603975692"
+SIZE="101062"
+ENDFILE
+VALUE "<project>\synthesis\Voltage_Monitor.so,so"
+STATE="utd"
+TIME="1603975692"
+SIZE="267"
+ENDFILE
+VALUE "<project>\synthesis\Voltage_Monitor_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1603975692"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\Voltage_Monitor_syn.prj,prj"
+STATE="utd"
+TIME="1603975692"
+SIZE="2431"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -283,6 +343,24 @@ FILE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.v,hdl"
 LIST Other_Association
 VALUE "<project>\simulation\subsystem.bfm,sim"
 VALUE "<project>\component\work\Voltage_Monitor\Voltage_Monitor.pdc,pdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\Voltage_Monitor.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\Voltage_Monitor.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\Voltage_Monitor_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\Voltage_Monitor_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "Voltage_Monitor_MSS::work"
@@ -361,10 +439,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole"
+NAME="SoftConsole2"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="eclipse.exe"
+LOCATION="E:\Program Files (x86)\Microsemi\SoftConsole v3.4\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -408,6 +486,20 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "Voltage_Monitor::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\Voltage_Monitor.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\Voltage_Monitor.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -421,12 +513,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Program Device:Voltage_Monitor_program.log
 StartPage;StartPage;0
-SmartDesign;Voltage_Monitor;0
-SmartDesign;Voltage_Monitor_MSS;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -444,6 +532,8 @@ SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_UART_Driver::work","","FALSE","FALSE"
 SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
 LIST "HAL::work","","FALSE","FALSE"
 ENDLIST

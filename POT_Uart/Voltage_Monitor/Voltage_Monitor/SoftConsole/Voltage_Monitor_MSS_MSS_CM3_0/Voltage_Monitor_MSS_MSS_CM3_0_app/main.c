@@ -12,7 +12,10 @@
   * * ******* ****** * * **** ***** ****** * * ******* "
 int main()
 {
-  const uint8_t greeting[] = "\n\rWelcome to Microsemi's SmartFusion Voltage Monitor\n\n\r";
+  const uint8_t greeting[] = "\n\rWelcome to Microsemi's SmartFusion Voltage Monitor. Completed by:\n\n\r";
+  const uint8_t atharva[] = "\rAtharva Nandanwar\n\r";
+  const uint8_t brian[] = "\rBrian Ibeling\n\r";
+  const uint8_t michael[] = "\rMichael Green\n\n\r";
   const uint8_t * channel_name;
   /*Initialize and Configure GPIO*/
   MSS_GPIO_init();
@@ -29,6 +32,11 @@ int main()
   ACE_init( );
   MSS_UART_polled_tx_string( &g_mss_uart0, (const uint8_t*)Microsemi_logo );
   MSS_UART_polled_tx( &g_mss_uart0, greeting, sizeof(greeting) );
+  // Print Names
+  MSS_UART_polled_tx( &g_mss_uart0, atharva, sizeof(atharva) );
+  MSS_UART_polled_tx( &g_mss_uart0, brian, sizeof(brian) );
+  MSS_UART_polled_tx( &g_mss_uart0, michael, sizeof(michael) );
+
   channel_name = ACE_get_channel_name( TM0_Voltage );
   for (;;)
   {

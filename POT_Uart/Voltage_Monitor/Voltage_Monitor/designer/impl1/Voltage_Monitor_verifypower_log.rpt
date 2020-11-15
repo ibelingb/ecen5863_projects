@@ -1,0 +1,21 @@
+Microsemi Libero Software
+Version: 11.8.0.26
+Release: v11.8
+
+Info: The design Voltage_Monitor.adb was last modified by software version 11.8.0.26.
+Opened an existing Libero design Voltage_Monitor.adb.
+  - Reading netlist
+  - Initializing power engine...
+Warning: No driver found for clock pin: Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MACCLK.
+Warning: No driver found for clock pin: Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:MACCLKCCC.
+Warning: No driver found for clock pin: Voltage_Monitor_MSS_0/MSS_ADLIB_INST/U_CORE:RCOSC.
+Warning: No driver found for clock pin:
+         Voltage_Monitor_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLMUXINT.
+Warning: No driver found for clock pin: Voltage_Monitor_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN3.
+Warning: No driver found for clock pin: Voltage_Monitor_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE3:PIN3.
+  - Restoring saved options...
+  - Power analysis done!
+
+The Execute Script command succeeded ( 00:00:07 )
+Design closed.
+

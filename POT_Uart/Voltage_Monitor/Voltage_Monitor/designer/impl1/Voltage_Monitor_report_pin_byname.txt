@@ -1,0 +1,21 @@
+*****************************************************************
+Pin Report - Date: Thu Oct 29 06:48:46 2020 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: Voltage_Monitor
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port        |Pin |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+GPIO_28_OUT  V20  Yes    UART_1_TXD/GPIO_28  LVTTL    8                  High  None           ---              No    35                No           Yes
+GPIO_29_OUT  W22  Yes    UART_1_RXD/GPIO_29  LVTTL    8                  High  None           ---              No    35                No           Yes
+GPIO_30_OUT  V22  Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  None           ---              No    35                No           Yes
+GPIO_31_OUT  U20  Yes    I2C_1_SCL/GPIO_31   LVTTL    8                  High  None           ---              No    35                No           Yes
+MSS_RESET_N  R1   Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
+TM0_Voltage  W8   Yes    TM0                 LVTTL    ---                Low   ---            ---              ---   ---               No           No
+UART_0_RXD   U18  Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD   Y22  Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes
+VAREF0       U10  Yes    VAREF0              LVTTL    ---                Low   ---            ---              ---   ---               No           No
