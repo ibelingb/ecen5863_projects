@@ -10,7 +10,8 @@
     <program>
         <type>C Program</type>
         <source_files>
-            <source_file filepath="true">part.c</source_file>
+            <source_file filepath="true">part2.c</source_file>
+            <source_file filepath="true">address_map_arm.h</source_file>
         </source_files>
         <options>
             <compiler_flags>-g -O0</compiler_flags>
