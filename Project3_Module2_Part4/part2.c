@@ -1,4 +1,5 @@
 /* part2.c
+ * Author: Brian Ibeling
  *
  * This program uses the A9 Private Timer to increment a timer at 0.01 sec
  * This time is then displayed to the 7-segment display on the DE1-SoC board.
